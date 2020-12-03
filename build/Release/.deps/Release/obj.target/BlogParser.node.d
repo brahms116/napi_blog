@@ -1,0 +1,1 @@
+cmd_Release/obj.target/BlogParser.node := g++ -shared -pthread -rdynamic -m64  -Wl,-soname=BlogParser.node -o Release/obj.target/BlogParser.node -Wl,--start-group Release/obj.target/BlogParser/cpp/src/main.o -Wl,--end-group 
