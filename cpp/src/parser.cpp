@@ -14,7 +14,7 @@ struct BlogData{
     std::vector<std::string> paragraphs;
 };
 
-std::string parsefile(int timestamp,const char* path){
+std::string parsefile(long timestamp,const char* path){
 
     
         /* code */

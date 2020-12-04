@@ -12,7 +12,7 @@ Napi::Value getJson(const Napi::CallbackInfo &info){
         return info.Env().Null();
     }
 
-    int timeStamp = info[0].As<Napi::Number>().Int32Value();
+    long timeStamp = info[0].As<Napi::Number>().Int64Value();
     std::string path = info[1].As<Napi::String>().Utf8Value();
     std::string jsonResult = parsefile(timeStamp,path.c_str());
 
