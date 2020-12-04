@@ -17,7 +17,7 @@ std::string JsonPrimitiveDouble::getValue(){
         bool isDecimal = false;
         bool countingZero = false;
         int startOfZero = 0;
-        for(int i = 0; i<str.size();i++){
+        for(unsigned int i = 0; i<str.size();i++){
             if(str[i]=='.'){
                 isDecimal = true;
             }

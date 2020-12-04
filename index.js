@@ -1,5 +1,13 @@
-const blogAddon = require('./build/Release/BlogParser.node')
+const { parse } = require("path");
+const path = require("path");
+const blogAddon = require("./build/Release/BlogParser.node");
 
-console.log(blogAddon)
+const parseFile = (filepath) => {
+  //   console.log(path.resolve(filepath));
+  const res = blogAddon.getJson(Date.now(), path.resolve(filepath));
+  return res;
+};
 
-module.exports = blogAddon
+// console.log(JSON.parse(parseFile("./sample.txt")));
+
+module.exports = parseFile;

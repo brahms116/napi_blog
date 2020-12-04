@@ -2,7 +2,11 @@
     "targets":[{
         "target_name":"BlogParser",
         "sources":[
-            "cpp/src/main.cpp"
+            "cpp/src/main.cpp",
+            "cpp/src/JsonPrimitive.cpp",
+            "cpp/src/JsonNode.cpp",
+            "cpp/src/JsonValuePair.cpp",
+            "cpp/src/parser.cpp",
         ],
         "include_dirs":[
             "<!(node -p \"require('node-addon-api').include_dir\")",

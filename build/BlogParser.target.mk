@@ -98,7 +98,11 @@ INCS_Release := \
 	-I$(srcdir)/cpp/include
 
 OBJS := \
-	$(obj).target/$(TARGET)/cpp/src/main.o
+	$(obj).target/$(TARGET)/cpp/src/main.o \
+	$(obj).target/$(TARGET)/cpp/src/JsonPrimitive.o \
+	$(obj).target/$(TARGET)/cpp/src/JsonNode.o \
+	$(obj).target/$(TARGET)/cpp/src/JsonValuePair.o \
+	$(obj).target/$(TARGET)/cpp/src/parser.o
 
 # Add to the list of files we specially track dependencies for.
 all_deps += $(OBJS)

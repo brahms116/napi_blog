@@ -83,7 +83,7 @@
     "ham_it_up": "",
     "legacy_bundling": "",
     "sign_git_tag": "",
-    "user_agent": "npm/6.14.9 node/v14.15.0 linux x64",
+    "user_agent": "npm/6.14.8 node/v14.15.0 linux x64",
     "always_auth": "",
     "bin_links": "true",
     "key": "",
