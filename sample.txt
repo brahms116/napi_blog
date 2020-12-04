@@ -7,4 +7,4 @@ Random words come out of "my mind" somet"imes it really is qui"te strange. Mia i
 This is a seco"nd paragraph, hopefully I won't be as ob"ssessed and keep talking about her haha. I hope this project on C plus plus can be beneficial and help me in the long run. But thinking back, I don't really know any projects that I did that were a waste of time. Maybe python because I don't really use it. I really want to teach Mia how to code python. I need a refresher.
 
 Third paragraph just for testing and good measure. 
-I think i need a better interface for building the json files haha.
+I think i need a better interface for building the json files haha."

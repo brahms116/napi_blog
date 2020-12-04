@@ -108,7 +108,7 @@ std::string parsefile(long timestamp,const char* path){
         size_t pos = para.find("\"");
         while(pos!=std::string::npos && para.substr(pos-1,1)!="\\"){
             para.replace(pos,1,"\\\"");
-            pos=para.find("\"");
+            pos=para.find("\"",pos+2);
         }
         paragraphs->addChild(std::make_shared<JsonPrimitive>(para));
     }
