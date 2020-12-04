@@ -104,7 +104,12 @@ std::string parsefile(long timestamp,const char* path){
 
     std::shared_ptr<JsonArray> paragraphs = std::make_shared<JsonArray>();
 
-    for(const std::string para : blogData.paragraphs){
+    for(std::string para : blogData.paragraphs){
+        size_t pos = para.find("\"");
+        while(pos!=std::string::npos && para.substr(pos-1,1)!="\\"){
+            para.replace(pos,1,"\\\"");
+            pos=para.find("\"");
+        }
         paragraphs->addChild(std::make_shared<JsonPrimitive>(para));
     }
 
