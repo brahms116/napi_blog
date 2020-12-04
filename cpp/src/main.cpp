@@ -1,6 +1,6 @@
 #include "napi.h"
 
-std::string parsefile(int timestamp,const char* path);
+std::string parsefile(long timestamp,const char* path);
 
 Napi::Value getJson(const Napi::CallbackInfo &info){
     if(info.Length()<2){
